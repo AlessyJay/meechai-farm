@@ -2,25 +2,15 @@ import { motion } from "framer-motion";
 
 export function Carrot() {
   return (
-    <motion.svg
-      animate={{ y: [0, -10, 0] }}
+    <motion.img
+      animate={{ y: [0, -5, 0] }}
       transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-      width="64"
-      height="64"
-      viewBox="0 0 64 64"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute opacity-20"
-    >
-      <path
-        d="M32 8C32 8 45 12 48 32C51 52 42 56 32 56C22 56 13 52 16 32C19 12 32 8 32 8Z"
-        fill="#FF6B6B"
-      />
-      <path
-        d="M32 4C32 4 36 6 36 8C36 10 32 12 32 12C32 12 28 10 28 8C28 6 32 4 32 4Z"
-        fill="#4CAF50"
-      />
-    </motion.svg>
+      width="300"
+      height="300"
+      className="object-contain opacity-50"
+      alt="carrot"
+      src="/images/carrot.png"
+    />
   );
 }
 

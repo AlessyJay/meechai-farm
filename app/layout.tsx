@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Lora, Poppins } from "next/font/google";
 import "./globals.css";
-import { SiteHeader } from "@/components/SiteHeader";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -30,21 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lora.variable} ${poppins.variable} font-sans min-h-screen bg-green-50/30`}
+        className={`${lora.variable} ${poppins.variable} min-h-screen bg-green-50/30 font-sans`}
       >
-        <div className="relative flex min-h-screen flex-col">
-          <SiteHeader />
-          <div className="mx-auto w-[70%] min-h-screen flex flex-col">
-            <main className="flex-1 flex flex-col">{children}</main>
-          </div>
-          <footer className="border-t bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-            <div className="mx-auto w-[70%] flex h-16 items-center justify-between">
-              <p className="text-sm text-muted-foreground">
-                © 2024 Meechai Farm. All rights reserved.
-              </p>
-            </div>
-          </footer>
-        </div>
+        {children}
       </body>
     </html>
   );
