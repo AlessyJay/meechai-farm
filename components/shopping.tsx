@@ -54,10 +54,7 @@ export function ShoppingSection() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative overflow-hidden bg-gradient-to-b from-green-50/30 to-green-50 py-16"
-    >
+    <section ref={sectionRef} className="relative mb-5 overflow-hidden py-16">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[url('/watercolor-texture.png')] bg-cover mix-blend-multiply"></div>
       </div>

@@ -13,7 +13,7 @@ export function AboutSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true, amount: 0.3 }}
-      className="mb-16 rounded-xl border-none bg-gradient-to-b from-green-100 to-green-50/30 py-16"
+      className="mb-16 rounded-xl border-none py-16"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
