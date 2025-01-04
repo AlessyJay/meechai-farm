@@ -61,8 +61,8 @@ export function SiteHeader() {
             </div>
             <nav className="mt-4 flex flex-col gap-4">
               {menuItems.map((item) => {
-                const isActive =
-                  (pathname.includes(item.href) && pathname.length > 1) ||
+                const isActive: boolean =
+                  (pathname.includes(item.href) && item.href.length > 1) ||
                   pathname === item.href;
                 return (
                   <motion.div
@@ -92,7 +92,7 @@ export function SiteHeader() {
           <NavigationMenuList>
             {menuItems.map((item) => {
               const isActive =
-                (pathname.includes(item.href) && pathname.length > 1) ||
+                (pathname.includes(item.href) && item.href.length > 1) ||
                 pathname === item.href;
               return (
                 <NavigationMenuItem key={item.href}>

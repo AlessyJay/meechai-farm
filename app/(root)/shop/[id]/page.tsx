@@ -6,7 +6,6 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { motion } from "framer-motion";
 import { Minus, Plus } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -89,14 +88,6 @@ export default function ProductDetailPage() {
               </div>
             )}
           </Slider>
-          <div className="absolute bottom-0 left-0 h-1 w-full bg-gray-200">
-            <motion.div
-              className="h-full bg-green-500"
-              initial={{ width: "0%" }}
-              animate={{ width: "100%" }}
-              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-            />
-          </div>
         </div>
         <div>
           <h1 className="mb-4 text-3xl font-bold">{product.name}</h1>

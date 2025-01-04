@@ -86,7 +86,7 @@ export default function ShopPage() {
                       <SelectValue placeholder="Select a category" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="All items">All Categories</SelectItem>
+                      <SelectItem value="All">All Categories</SelectItem>
                       <SelectItem value="Vegetables">Vegetables</SelectItem>
                       <SelectItem value="Fruits">Fruits</SelectItem>
                       <SelectItem value="Herbs">Herbs</SelectItem>
@@ -145,7 +145,9 @@ export default function ShopPage() {
                             `/placeholder.svg?height=300&width=300&text=${encodeURIComponent(product.name)}`
                           }
                           alt={product.name}
-                          fill
+                          width={300}
+                          height={300}
+                          priority
                           className="size-full rounded-md object-cover"
                         />
                       </div>
